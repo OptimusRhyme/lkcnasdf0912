@@ -1,0 +1,29 @@
+.header-brand {
+	background: #1B7FBB;
+	height: 80px;
+	width: 280px;
+	float: left;
+}
+
+.header {
+	border-bottom: 2px solid #E9E7E8;
+	height: 81px;
+	width: 1639px;
+	float: right;
+}
+
+nav {
+	background: #2A2D34;
+	height: 100%;
+	margin-top: 80px;
+	position: fixed;
+	width: 280px;
+
+	a {
+		color: #9B9FA2;
+	}
+
+	 .nav a:hover {
+		background-color: #fff;
+	}
+}
