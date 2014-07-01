@@ -1,27 +1,204 @@
-.header-brand {
-  background: #1B7FBB;
-  height: 80px;
-  width: 280px;
-  float: left;
+@font-face {
+  font-family: 'Avenir';
+  src: url("../fonts/avenir_next_rg-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/avenir_next_rg-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/avenir_next_rg-webfont.woff") format("woff"), url("../fonts/avenir_next_rg-webfont.ttf") format("truetype"), url("../fonts/avenir_next_rg-webfont.svg#95d90f2cd2aa64bdfee0e9f34c516e71") format("svg");
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Brandon';
+  src: url("../fonts/brandon_bld-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/brandon_bld-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/brandon_bld-webfont.woff") format("woff"), url("../fonts/brandon_bld-webfont.ttf") format("truetype"), url("../fonts/brandon_bld-webfont.svg#e2b4a901dc21adc8c4deecbedb302532") format("svg");
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: 400;
+}
+body {
+  background: #F7F7F7;
+  min-width: 820px;
 }
 
-.header {
-  border-bottom: 2px solid #E9E7E8;
-  height: 81px;
-  width: 1639px;
-  float: right;
+.fa {
+  color: #9B9FA2;
+  float: left;
+  margin-top: 17px;
+  padding-left: 20px;
+}
+
+.main-brand {
+  background: #1B7FBB;
+  height: 80px;
+  padding: 19px 0 0 23px;
+  width: 280px;
+}
+.main-brand .brand {
+  width: 170px;
 }
 
 nav {
   background: #2A2D34;
   height: 100%;
-  margin-top: 80px;
   position: fixed;
   width: 280px;
 }
-nav a {
+nav .nav {
+  padding: 17px 0;
+}
+nav .nav li {
+  padding: 3px 0 3px 3px;
+}
+nav .nav a {
+  font-family: "Avenir";
+  font-size: 19px;
   color: #9B9FA2;
+  padding-left: 55px;
+  letter-spacing: 1;
 }
 nav .nav a:hover {
-  background-color: #fff;
+  background-color: transparent;
+}
+nav .nav li:hover {
+  background: #fff;
+}
+
+main {
+  margin-left: 280px;
+  min-width: 820px;
+}
+main .container-fluid {
+  padding: 50px 58px;
+}
+
+.header, .subheader {
+  background: #ffffff;
+  border-bottom: 2px solid #E9E7E8;
+}
+
+.header {
+  height: 81px;
+}
+.header .header-container {
+  padding: 15px;
+  font-family: "Avenir";
+  letter-spacing: 1.5;
+}
+.header .breadcrumbs {
+  font-size: 21px;
+  float: left;
+  margin: 13px 0 0 42px;
+}
+.header .btn {
+  float: right;
+  padding: 11px;
+  font-size: 16px;
+}
+.header .btn-cancel {
+  background: #D1D1D1;
+  border-bottom: 2px solid #9A9A9A;
+  color: #fff;
+  width: 155px;
+  margin-right: 15px;
+}
+.header .btn-save {
+  background: #54BD85;
+  border-bottom: 2px solid #9A9A9A;
+  color: #fff;
+  width: 155px;
+}
+
+.subheader {
+  height: 65px;
+  padding: 25px;
+}
+.subheader .navbar-nav {
+  padding-left: 50px;
+}
+.subheader li {
+  font-size: 18px;
+  font-family: "Avenir";
+  padding-bottom: 14px;
+  width: 95px;
+  text-align: center;
+  margin-right: 20px;
+}
+.subheader a {
+  color: #AFADAE;
+  text-decoration: none;
+}
+.subheader li:hover {
+  border-bottom: 4px solid #167FC1;
+}
+.subheader .active {
+  border-bottom: 4px solid #167FC1;
+}
+.subheader .active a {
+  color: #227FAB;
+}
+
+.panel {
+  width: 745px;
+  font-family: "Brandon";
+  letter-spacing: 1.5;
+}
+.panel .panel-heading {
+  background: #E0E0E0;
+}
+.panel .panel-heading h4 {
+  color: #686868;
+}
+.panel .panel-heading, .panel .list-group-item {
+  padding-left: 38px;
+}
+.panel .list-group-item {
+  padding: 20px 30px;
+  height: 120px;
+  font-size: 20px;
+}
+.panel .list-group-label {
+  font-family: 'Avenir';
+  float: left;
+  padding: 7px 0;
+  margin: 0;
+  font-size: 16px;
+}
+.panel .choose-file {
+  color: #A4A4A4;
+  font-family: 'Avenir';
+  font-size: 16px;
+  width: 245px;
+  float: right;
+  border-radius: 0;
+  background: #F2F2F0;
+  padding: 10px;
+}
+
+.color-box {
+  height: 40px;
+  width: 40px;
+  float: left;
+  margin-right: 25px;
+}
+
+.color-box-header {
+  background: #222222;
+}
+
+.color-box-footer {
+  background: #B2B2B2;
+}
+
+.color-box-background {
+  background: #ffffff;
+  border: 1px solid #DEDEDE;
+}
+
+.color-box-search {
+  background: #FAD96E;
+}
+
+.color-box-signup {
+  background: #EA4E4F;
 }
