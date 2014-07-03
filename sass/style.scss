@@ -17,13 +17,14 @@
   font-weight: 400;
 }
 
+/*==== GENERAL STYLES ====*/
+
 body {
-	background: #F7F7F7;
-	min-width: 820px;
+	background: #f7f7f7;
 }
 
 .fa {
-	color: #9B9FA2;
+	color: #9b9fa2;
 	float: left;
 	margin-top: 17px;
 	padding-left: 20px;
@@ -32,21 +33,9 @@ body {
 /*==== LEFT HAND NAVBAR ====*/
 
 nav {
-	background: #2A2D34;
+	background: #2a2d34;
 	height: 100%;
 	position: fixed;
-	width: 280px;
-
-	.main-brand {
-		background: #1B7FBB;
-		height: 80px;
-		padding: 19px 0 0 23px;
-		width: 280px;
-
-		.brand {
-			width: 170px;
-		}
-	}
 
 	.nav {
 		padding: 17px 0;
@@ -63,13 +52,23 @@ nav {
 			letter-spacing: 1;
 		}
 	}
-
-	 .nav a:hover {
+	.nav a:hover {
 		background-color: transparent;
 	}
 
 	.nav li:hover {
 		background: #fff;
+	}
+}
+
+.main-brand {
+	background: #1b7Fbb;
+	height: 80px;
+	padding: 19px 0 0 23px;
+	width: 280px;
+
+	.brand {
+		width: 170px;
 	}
 }
 
@@ -94,38 +93,38 @@ main {
 .header {
 	height: 81px;
 
-	.header-container {
-		padding: 15px;
-		font-family: "Avenir";
-		letter-spacing: 1.5;
-	}
-
-	.breadcrumbs {
-		font-size: 21px;
-		float: left;
-		margin: 13px 0 0 42px;
-	}
-
 	.btn {
 		float: right;
 		padding: 11px;
 		font-size: 16px;
 	}
 
-	.btn-cancel {
-		background: #D1D1D1;
-		border-bottom: 2px solid #9A9A9A;
-		color: #fff;
-		width: 155px;
-		margin-right: 15px;
+	.header-container {
+		padding: 15px;
+		font-family: "Avenir";
+		letter-spacing: 1.5;
 	}
+}
 
-	.btn-save {
-		background: #54BD85;
-		border-bottom: 2px solid #9A9A9A;
-		color: #fff;
-		width: 155px;
-	}
+.btn-cancel {
+	background: #D1D1D1;
+	border-bottom: 2px solid #9A9A9A;
+	color: #fff;
+	width: 155px;
+	margin-right: 15px;
+}
+
+.btn-save {
+	background: #54BD85;
+	border-bottom: 2px solid #9A9A9A;
+	color: #fff;
+	width: 155px;
+}
+
+.breadcrumbs {
+	font-size: 21px;
+	float: left;
+	margin: 13px 0 0 42px;
 }
 
 /*==== SUBHEADER ====*/
@@ -134,17 +133,14 @@ main {
 	height: 65px;
 	padding: 25px;
 
-	.navbar-nav {
-		padding-left: 50px;
-	}
 
 	li {
+		display: inline-block;
 		font-size: 18px;
 		font-family: "Avenir";
-		padding-bottom: 14px;
+		padding: 0 20px 10px;
+		margin-right: 25px;		
 		text-align: center;
-		width: 95px;
-		margin-right: 20px;
 	}
 
 	a {
@@ -168,53 +164,52 @@ main {
 /*==== PANELS ====*/
 
 .panel {
-	width: 745px;
 	font-family: "Brandon";
 	letter-spacing: 1.5;
+	width: 745px;
+}
 
-	.panel-heading {
-		background: #E0E0E0;
+.panel-heading {
+	background: #e0e0e0;
 
-		h4 {
-			color: #686868;
-		}
+	h4 {
+		color: #686868;
 	}
+}
 
-	.panel-heading, .list-group-item {
-		padding-left: 38px;
-	}
+.panel-heading, .list-group-item {
+	padding-left: 38px;
+}
 
-	.list-group-item {
-		padding: 20px 30px;
-		height: 120px;
-		font-size: 20px;
-	}
+.list-group-item {
+	font-size: 20px;
+	height: 120px;
+	padding: 20px 30px;
+}
 
-	.list-group-label {
-		font-family: 'Avenir';
-		float: left;
-		padding: 7px 0;
-		margin: 0;
-		font-size: 16px;
-	}
+.list-group-label {
+	font-family: 'Avenir';
+	font-size: 16px;
+	float: left;
+	margin: 0;
+	padding: 7px 0;
+}
 
-	.choose-file {
-		color: #A4A4A4;
-		font-family: 'Avenir';
-		font-size: 16px;
-		width: 245px;
-		float: right;
-		border-radius: 0;
-		background: #F2F2F0;
-		padding: 10px;
-	}
+.choose-file {
+	border-radius: 0;
+	background: #f2f2f0;
+	color: #a4a4a4;
+	font-family: 'Avenir';
+	font-size: 16px;
+	float: right;
+	padding: 10px;
+	width: 245px;
 }
 
 /*==== BOXES FOR COLOR PANEL ====*/
 
 .color-box {
-	height: 40px;
-	width: 40px;
+	padding: 20px;
 	float: left;
 	margin-right: 25px;
 }
